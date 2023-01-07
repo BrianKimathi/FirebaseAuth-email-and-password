@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FBTut</string>
+    <string name="not_logged_in">You are not Logged In!</string>
+    <string name="logged_in">You are Logged In!</string>
 </resources>

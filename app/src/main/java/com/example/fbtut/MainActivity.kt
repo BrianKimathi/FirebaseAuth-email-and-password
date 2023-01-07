@@ -109,9 +109,9 @@ class MainActivity : AppCompatActivity() {
     private fun checkLoggedInState() {
         val user = auth.currentUser
         if (user == null)
-            binding.tvLoggedIn.text = "You are not Logged In!"
+            binding.tvLoggedIn.text = getString(R.string.not_logged_in)
 
-        binding.tvLoggedIn.text = "You are Logged In!"
+        binding.tvLoggedIn.text = getString(R.string.logged_in)
         binding.etUsername.setText(user!!.displayName)
         binding.ivProfilePicture.setImageURI(user.photoUrl)
     }
